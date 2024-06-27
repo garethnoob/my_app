@@ -1,11 +1,13 @@
-const test = document.getElementById('test');
+const number = document.getElementById('number');
+const number2 = document.getElementById('number2');
 
-test.addEventListener('click', () => {
-    test.textContent = 'you have clicked me';
-});
+const result = document.getElementById('result');
 
-const hello = document.getElementById('hello');
+const updateResult = () => {
+    const ans = +number.value + +number2.value; 
+    result.textContent = ans;
+}
 
-hello.addEventListener('click', () => {
-    test.textContent = 'hello';
-});
+number.addEventListener('change', updateResult);
+
+number2.addEventListener('change', updateResult);
