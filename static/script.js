@@ -8,6 +8,6 @@ const updateResult = () => {
     result.textContent = ans;
 }
 
-number.addEventListener('change', updateResult);
+number.addEventListener('keyup', updateResult);
 
-number2.addEventListener('change', updateResult);
+number2.addEventListener('keyup', updateResult);
